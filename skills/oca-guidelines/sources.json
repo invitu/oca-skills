@@ -1,0 +1,217 @@
+{
+  "issues_repo": "OCA/oca-skills",
+  "entries": [
+    {
+      "id": "contributing-commit-message",
+      "guidelines": [
+        "guidelines/commits.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/odoo-community.org/refs/heads/master/website/Contribution/CONTRIBUTING.rst",
+      "mode": "hash",
+      "extract": {
+        "type": "rst_section",
+        "heading": "Commit message"
+      },
+      "sha256": "929044f3861b7e330a7d9be82f8cdf3cd44289074b7ebfcc1aa0495b0afc006a",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "ai-policy",
+      "guidelines": [
+        "guidelines/commits.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/.github/refs/heads/master/AI_POLICY.md",
+      "mode": "hash",
+      "extract": {
+        "type": "file"
+      },
+      "sha256": "87ac4c755f9e1778a341e835a98187bdf7803e276f546857853004bd7b480867",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "odoo-git-guidelines",
+      "guidelines": [
+        "guidelines/commits.md"
+      ],
+      "url": "https://www.odoo.com/documentation/<series>/contributing/development/git_guidelines.html",
+      "mode": "pointer"
+    },
+    {
+      "id": "contributing-modules",
+      "guidelines": [
+        "guidelines/naming.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/odoo-community.org/refs/heads/master/website/Contribution/CONTRIBUTING.rst",
+      "mode": "hash",
+      "extract": {
+        "type": "rst_section",
+        "heading": "Modules"
+      },
+      "sha256": "88ee0be21830b1e73a786b47c25f1da8a5a4da0848259aca9367d98fd923672c",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "contributing-file-naming",
+      "guidelines": [
+        "guidelines/naming.md",
+        "guidelines/readme.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/odoo-community.org/refs/heads/master/website/Contribution/CONTRIBUTING.rst",
+      "mode": "hash",
+      "extract": {
+        "type": "rst_section",
+        "heading": "File naming"
+      },
+      "sha256": "cb149b6f3cbda7893875b57d90351eafa5982e4ec11a18960f5e6c71ac36027a",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "contributing-xmlid",
+      "guidelines": [
+        "guidelines/naming.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/odoo-community.org/refs/heads/master/website/Contribution/CONTRIBUTING.rst",
+      "mode": "hash",
+      "extract": {
+        "type": "rst_section",
+        "heading": "Naming xml_id"
+      },
+      "sha256": "7af0e3be47bd74c122be0bc2f7c71e9d58eb5ec0cec883e68b9dd634386325bb",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "contributing-symbols",
+      "guidelines": [
+        "guidelines/naming.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/odoo-community.org/refs/heads/master/website/Contribution/CONTRIBUTING.rst",
+      "mode": "hash",
+      "extract": {
+        "type": "rst_section",
+        "heading": "Symbols"
+      },
+      "sha256": "f3c1eb3d87c8bca96aa9c79f9c307ab0032637b5e1c9b28bf2222dacf285eacc",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "contributing-models",
+      "guidelines": [
+        "guidelines/naming.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/odoo-community.org/refs/heads/master/website/Contribution/CONTRIBUTING.rst",
+      "mode": "hash",
+      "extract": {
+        "type": "rst_section",
+        "heading": "Models"
+      },
+      "sha256": "8dda38bb40c1e1c9c6791ca9e0398dc6838062f4c1409a93d2835ca63b567255",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "contributing-directories",
+      "guidelines": [
+        "guidelines/readme.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/odoo-community.org/refs/heads/master/website/Contribution/CONTRIBUTING.rst",
+      "mode": "hash",
+      "extract": {
+        "type": "rst_section",
+        "heading": "Directories and files"
+      },
+      "sha256": "7e812740b4de06158293793969c394ee5f904733333e8ca2553bedd94f9e9d50",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "readme-fragments",
+      "guidelines": [
+        "guidelines/readme.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/maintainer-tools/refs/heads/master/tools/gen_addon_readme.py",
+      "mode": "hash",
+      "extract": {
+        "type": "regex",
+        "pattern": "FRAGMENTS = \\{.*?\\n\\}"
+      },
+      "sha256": "884239136cb8141db70ee5e0291ee76ff4d61f6cbf5351fcdcfe94fe16832f92",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "readme-template-description",
+      "guidelines": [
+        "guidelines/readme.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/maintainer-tools/refs/heads/master/template/module/readme/DESCRIPTION.md",
+      "mode": "hash",
+      "extract": {
+        "type": "file"
+      },
+      "sha256": "985f973baaf1eeaf16dca48b4a0567f9a2e0648bef893f946d6784f0c897b58e",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "readme-template-usage",
+      "guidelines": [
+        "guidelines/readme.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/maintainer-tools/refs/heads/master/template/module/readme/USAGE.md",
+      "mode": "hash",
+      "extract": {
+        "type": "file"
+      },
+      "sha256": "33d97419af49f475db3b0afa8dc3a92751901ec2cce19bbda64bd957829017d7",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "readme-template-configure",
+      "guidelines": [
+        "guidelines/readme.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/maintainer-tools/refs/heads/master/template/module/readme/CONFIGURE.md",
+      "mode": "hash",
+      "extract": {
+        "type": "file"
+      },
+      "sha256": "17699dce40cb8641381121bc74dd01631eff54876c11b5d4f773630816afd0f7",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "readme-template-install",
+      "guidelines": [
+        "guidelines/readme.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/maintainer-tools/refs/heads/master/template/module/readme/INSTALL.md",
+      "mode": "hash",
+      "extract": {
+        "type": "file"
+      },
+      "sha256": "a6637beb29fd6f24c16dce9490e8ff02e0fe751d51bcd275614d49f146a2d099",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "readme-template-context",
+      "guidelines": [
+        "guidelines/readme.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/maintainer-tools/refs/heads/master/template/module/readme/CONTEXT.md",
+      "mode": "hash",
+      "extract": {
+        "type": "file"
+      },
+      "sha256": "25f9e7b4338a8c0fa75a7a67b30ef639c0a60d47bb25cc8cc90c973ccb25f76d",
+      "checked": "2026-11-20"
+    },
+    {
+      "id": "readme-template-history",
+      "guidelines": [
+        "guidelines/readme.md"
+      ],
+      "url": "https://raw.githubusercontent.com/OCA/maintainer-tools/refs/heads/master/template/module/readme/HISTORY.md",
+      "mode": "hash",
+      "extract": {
+        "type": "file"
+      },
+      "sha256": "e3d15ed090400d6f86b9fb2f84a011ee0323a83a4e993fa080b39a365abc192e",
+      "checked": "2026-11-20"
+    }
+  ]
+}

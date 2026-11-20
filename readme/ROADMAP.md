@@ -1,0 +1,4 @@
+- Roles still to write: module evaluation, issue triage, analysis of the reviews received on a pull request, migration plan.
+- Guidelines whose official source is not yet registered: `manifest`, `models-fields`, `tests`, `security`, `security-audit`, `javascript` (marked `Source: to confirm`).
+- The skills have not yet been run on real tasks.
+- The license of this repository and its place in the OCA organization are to be confirmed with OCA.
