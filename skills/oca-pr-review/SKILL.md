@@ -67,7 +67,7 @@ If a request fails (network, rate limit), stop and ask for the diff in
      true of the code, short, images within the limits;
    - names of module, files and XML ids (`guidelines/naming.md`);
    - `string=` redundant, `return res` after `super()`;
-   - security: sweep the diff with `guidelines/security-audit.md`;
+   - security: run `oca-security-audit/scripts/security_sweep.py` on the diff and judge the hits with `guidelines/security-audit.md`;
    - commit messages in the `[FIX]`/`[IMP] <module>: ...` format.
 4. Trace in the code that the PR does what its description and the linked
    issue say. A path that does not cover a stated case is a finding.

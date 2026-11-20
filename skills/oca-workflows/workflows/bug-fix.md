@@ -12,7 +12,7 @@ A bug reported in a GitHub issue of an OCA repository.
 | 4 | `oca-dev` (phase 1) | validated spec and architecture | code | |
 | 5 | `oca-validator` | spec, code | `validation_*.md` | independent |
 | 6 | `oca-tests` | spec, validation, code | regression test, results | loop to 4 on failure |
-| 7 | `oca-security-audit` | spec, architecture, code | `audit_security_*.md` | independent; loop to 4 on a blocking finding |
+| 7 | `oca-security-audit` | spec, architecture, diff | `audit_security_*.md` | only if the diff contains a pattern of `oca-guidelines/guidelines/security-audit.md`, on the diff only; independent; loop to 4 on a blocking finding |
 | 8 | `oca-dev` (phase 2), on request | code | cleaned comments | |
 | 9 | `oca-reviewer` | architecture, diff | verdict | independent |
 | 10 | human | verdict | commit `[FIX] <module>: ...`, push, pull request mentioning the issue | |

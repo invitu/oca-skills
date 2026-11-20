@@ -16,6 +16,10 @@ correct result.
   run it instead of checking by reading.
 - Run the narrowest check: the tests of the modules concerned, not the whole
   suite; the changed files, not the whole repository.
+- Never let a command print its whole output into the conversation. Send test,
+  build and linter logs to a file, then read only the failures and the
+  summary (`grep`, `tail`, `head`). Limit `git log`, `git diff` and searches
+  (`-n`, a path, `--stat` first).
 - Use a local copy of a source before the network.
 - A guideline that has a `Source:` is a summary. At its first loading in the
   task, run `python3 -I <skill folder>/scripts/check_sources.py --series
@@ -24,6 +28,10 @@ correct result.
   difference. `NOT_FOUND`, `SECTION_NOT_FOUND`, `UNREACHABLE`: continue with
   the guideline and say "source not verified"; for the first two, offer the
   issue at the end of the task (`source-check.md`).
+- Write a file only if at least two steps read it or if it is costly to
+  recompute. A result a script gives in one call is not stored. A file
+  derived by a script carries what it was derived from, so that a later
+  step knows whether it is still valid.
 - Make independent calls in the same step.
 - Write short outputs: lists and tables, no recap of the input, no narration
   of the steps, no content repeated between files.

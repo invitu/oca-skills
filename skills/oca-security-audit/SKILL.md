@@ -25,9 +25,13 @@ fixes: reports, and `oca-dev` fixes.
 2. Load `oca-guidelines/guidelines/security-audit.md` and, only if a pattern
    needs it, `security.md` and the Odoo security documentation of the target
    series (`references.md`).
-3. Sweep the changed files (or the module) pattern by pattern with search
-   tools, then judge each hit. Do not read the whole code to find patterns
-   that a search finds.
+3. Run the sweep script, then judge each hit. Do not read the whole code to
+   find patterns that a search finds. For a diff:
+   `python3 -I scripts/security_sweep.py --repo <dir> --range <git range>`;
+   for a new module: `--files <file> [<file> ...]`. If `audit_required` is
+   false, write "audit not required, no sensitive pattern in the diff" in the
+   task folder and stop. A row of `security-audit.md` that the script does
+   not cover (read it in the table) is swept with search tools.
 4. Check the plan against the code: each planned access right, record rule
    and restriction exists and does what the plan says.
 

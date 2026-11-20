@@ -10,9 +10,12 @@ series. Task name: `<module>-migration-<target series>`.
 | 3 | human | plan | status | |
 | 4 | `oca-dev` | validated plan | code | commit `[MIG] <module>: Migration to <series>` |
 | 5 | `oca-validator`, then `oca-tests` | plan, code | validation, results | loop to 4 on failure |
-| 6 | `oca-security-audit` | plan, diff | `audit_security_*.md` | independent; on the changed code only |
-| 7 | `oca-reviewer` | diff | verdict | independent |
-| 8 | human | verdict | push, pull request | |
+| 6 | `oca-reviewer` | diff | verdict | independent |
+| 7 | human | verdict | push, pull request | |
+
+Run `oca-security-audit` on the diff, before step 6, only if the diff
+contains a pattern of `oca-guidelines/guidelines/security-audit.md` (see
+`common.md`, Security).
 
 The exact procedure is not restated here: read the documents listed under
 `oca-guidelines/guidelines/references-migration.md`

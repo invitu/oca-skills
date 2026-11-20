@@ -27,10 +27,11 @@ Before writing any code:
 For each module, load the rule packs listed for it in `architecture_*.md`
 (`oca-guidelines` and any additional pack). Always load
 `guidelines/models-fields.md`, `guidelines/naming.md`, `guidelines/security.md`,
-`guidelines/efficiency.md`, `guidelines/javascript.md` when the module has
-`static/src`, plus `guidelines/licensing.md` and
-`guidelines/manifest.md` of each pack. When two packs disagree, the pack
-listed last wins.
+`guidelines/efficiency.md` of each pack. Load `guidelines/javascript.md` only
+when the module has `static/src`, `guidelines/manifest.md` only when the
+manifest is created or changed, and `guidelines/licensing.md` only when a
+license is chosen or a file of an existing module is touched. When two packs
+disagree, the pack listed last wins.
 
 - Before the first commit message of the task, check the commit rules of
   the current AI policy: the source check of `commits.md` covers it

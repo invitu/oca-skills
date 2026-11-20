@@ -6,7 +6,8 @@ Run after implementation, on a module or a diff, by a role that did not write
 the code. It does not replace security by design (`security.md`): it checks
 that the design was followed and finds what was missed.
 
-Sweep the code for each pattern, then judge each hit against its question. A
+Sweep the code for each pattern (`oca-security-audit/scripts/security_sweep.py`
+covers the textual ones), then judge each hit against its question. A
 hit is not a finding by itself. Names and details depend on the series: read
 the Odoo security documentation of the target series (`references.md`).
 

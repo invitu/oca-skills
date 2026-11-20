@@ -9,6 +9,6 @@
 | 2 | human | `feedback_*.md` | status, replies posted | |
 | 3 | `oca-dev` | validated `feedback_*.md` | code | only the accepted changes |
 | 4 | `oca-validator`, then `oca-tests` | feedback file, code | validation, results | loop to 3 on failure |
-| 5 | `oca-security-audit` | feedback file, diff | `audit_security_*.md` | independent; on the changed code only |
+| 5 | `oca-security-audit` | feedback file, diff | `audit_security_*.md` | only if the diff contains a pattern of `oca-guidelines/guidelines/security-audit.md`, on the diff only; independent |
 | 6 | `oca-reviewer` | diff | verdict | independent |
 | 7 | human | verdict | push, replies | |
