@@ -5,11 +5,11 @@ series. Task name: `<module>-migration-<target series>`.
 
 | # | Step | Reads | Writes | Notes |
 |---|---|---|---|---|
-| 1 | availability check | the repository on the target series, the migration issue of the repository | result in the task folder | if the module already exists there, stop; if a pull request is open, report it |
-| 2 | migration plan (role to write) | the documents of `oca-guidelines/guidelines/references-migration.md` for each step (OCA migration guide of the target series, OpenUpgrade analysis of the pair of series), the module code | plan | points to confirm marked "TO CONFIRM" |
-| 3 | human | plan | status | |
-| 4 | `oca-dev` | validated plan | code | commit `[MIG] <module>: Migration to <series>` |
-| 5 | `oca-validator`, then `oca-tests` | plan, code | validation, results | loop to 4 on failure |
+| 1 | `oca-migration-plan` | the repository on the target series, open pull requests | `availability_*.md` only when stopping | module already on the target series, or an open pull request: stop |
+| 2 | `oca-migration-plan` | the documents of `oca-guidelines/guidelines/references-migration.md` for this pair, the module, its `depends` | `spec_*.md`, `architecture_*.md` | replaces `oca-spec` and `oca-architect`. Unverified points are `TO CONFIRM` |
+| 3 | human | spec, architecture | status | |
+| 4 | `oca-dev` | validated spec and architecture | code | `[MIG] <module>: Migration to <series>`. Do not start while the architecture says `Blocked until:` with a dependency |
+| 5 | `oca-validator`, then `oca-tests` | spec, code | validation, results | loop to 4 on failure |
 | 6 | `oca-reviewer` | diff | verdict | independent |
 | 7 | human | verdict | push, pull request | |
 
@@ -34,5 +34,5 @@ Apply this workflow to each module, in the order of the dependency graph:
 a module is migrated after the modules it depends on. The map from
 `oca-project-map` (`multi-module-project.md`, step 0) gives that order.
 Data model changes of
-the pair of series that affect the project's modules are listed in the plan
+the pair of series that affect the project's modules are listed in the spec
 of each module.
