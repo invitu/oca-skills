@@ -1,9 +1,10 @@
 # __manifest__.py
 
-Source: to confirm (not yet in `sources.json`).
+Source: to confirm for the rules below, except "Migration to another
+series", which is `oca-migration-guide` in `sources.json`.
 
 ## Existing module
-- `version`: never modified
+- `version`: not modified, except a migration to another series (below)
 - `license`: never modified
 - Other keys (`depends`, `data`, `assets`...): modifiable if the task
   justifies it
@@ -16,3 +17,13 @@ Source: to confirm (not yet in `sources.json`).
   `architecture_*.md`, among those in the target repository's
   `license-allowed`
 - `author` includes `'Odoo Community Association (OCA)'`
+
+## Migration to another series
+
+Source: `oca-migration-guide` (`sources.json`, pointer). The page depends
+on the series, so it is not fingerprinted: a hash of one series would be
+wrong for the next.
+
+Set `version` to the string written in the OCA migration guide of the
+target series (its tasks list). Read that page for the series of the task.
+Do not reuse the string of another series. `license` still does not change.

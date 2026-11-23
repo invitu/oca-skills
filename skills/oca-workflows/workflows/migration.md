@@ -9,7 +9,7 @@ series. Task name: `<module>-migration-<target series>`.
 | 2 | `oca-migration-plan` | the documents of `oca-guidelines/guidelines/references-migration.md` for this pair, the module, its `depends` | `spec_*.md`, `architecture_*.md` | replaces `oca-spec` and `oca-architect`. Unverified points are `TO CONFIRM` |
 | 3 | human | spec, architecture | status | |
 | 4 | `oca-dev` | validated spec and architecture | code | `[MIG] <module>: Migration to <series>`. Do not start while the architecture says `Blocked until:` with a dependency |
-| 5 | `oca-validator`, then `oca-tests` | spec, code | validation, results | loop to 4 on failure |
+| 5 | `oca-validator`, then `oca-tests` | spec, code | validation, results | loop to 4 on failure. Before the human is asked to push: `guidelines/tests.md`, Migration |
 | 6 | `oca-reviewer` | diff | verdict | independent |
 | 7 | human | verdict | push, pull request | |
 

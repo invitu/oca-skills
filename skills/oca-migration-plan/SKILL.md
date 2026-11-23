@@ -63,14 +63,15 @@ A jump that skips a series is one task per consecutive pair.
    file not seen is not written into the plan.
 6. Each change names the module file and the URL or analysis path that
    requires it. Anything else is `TO CONFIRM`.
-7. Version. Copy the version string the target series guide states. Do not
-   reuse the string of another series. `guidelines/manifest.md` forbids
-   editing `version` on an existing module: put that contradiction in
-   `TO CONFIRM` so the human decides. `license` does not change. Copyright
-   years and original authors do not change.
+7. Version. Copy the version string the target series guide states
+   (`guidelines/manifest.md`, migration). Do not reuse the string of
+   another series. `license` does not change. Copyright years and original
+   authors do not change.
 8. Use cases: behavior that must still hold, plus one use case per change
-   the guide makes to this module. One test per use case
-   (`guidelines/tests.md`). No coverage percentage.
+   the guide makes to this module. One test per use case. `oca-tests` then
+   applies the Migration section of `guidelines/tests.md` (pre-commit,
+   module tests, coverage) before the work is handed back for push. This
+   role does not run that gate.
 9. Port method: the technical method named in the target series guide
    (branch from the target series, history of this module only). Name the
    section. Do not run it, and do not run `oca-port` or

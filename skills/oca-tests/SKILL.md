@@ -20,6 +20,11 @@ initiative — see `guidelines/tests.md` (skill `oca-guidelines`) for the
 minimum-viable principle. A security use case of the spec gets one test with
 a user who must be refused.
 
+A migration is the exception in `guidelines/tests.md` (Migration): after the
+use cases, add tests only for Python of this module that those use cases
+leave untested, until that section passes. Report the real coverage. Do not
+push.
+
 ## Method
 
 1. Read `spec_*.md`, section "Use cases identified", and
@@ -48,6 +53,8 @@ a user who must be refused.
 
 ## Prohibitions
 
-- Never write a test for a use case absent from the spec.
+- Never write a test for a use case absent from the spec. On a migration,
+  the extra tests allowed by `guidelines/tests.md` (Migration) name a file
+  and the lines they cover. They do not invent a use case.
 - Never present a test result that was not actually run.
 - Never fix the code yourself on failure — report and let `oca-dev` fix.
