@@ -60,7 +60,7 @@ The scripts need Python 3. `check_sources.py` needs network access to `raw.githu
 - `skills/oca-guidelines/sources.json`: set `issues_repo` to the repository where broken sources are reported.
 - `OCA_SKILLS_CACHE`: folder of the source-check cache and of the log of broken sources (default `~/.cache/oca-skills`).
 - `check_sources.py --max-age`: how long a verified source is not downloaded again (default 7 days).
-- Rule packs: list the packs that apply to a module, after `oca-guidelines`, in `architecture_<task>.md`.
+- Rule packs: list the packs that apply to a module, after `oca-guidelines`, in `architecture_<task>.md`. `oca-review-lessons` is a pack of what OCA reviewers repeatedly ask to change; list it for any change meant for an OCA repository.
 
 ## Usage
 
