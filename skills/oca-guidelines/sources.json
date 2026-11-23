@@ -212,6 +212,14 @@
       },
       "sha256": "e3d15ed090400d6f86b9fb2f84a011ee0323a83a4e993fa080b39a365abc192e",
       "checked": "2026-11-20"
+    },
+    {
+      "id": "oca-migration-guide",
+      "guidelines": [
+        "guidelines/manifest.md"
+      ],
+      "url": "https://github.com/OCA/maintainer-tools/wiki/Migration-to-version-<series>",
+      "mode": "pointer"
     }
   ]
 }
