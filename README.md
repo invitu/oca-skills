@@ -107,7 +107,7 @@ python3 -I skills/oca-security-audit/tests/test_security_sweep.py
 
 ## Known issues / roadmap
 
-- Roles still to write: module evaluation, issue triage, analysis of the reviews received on a pull request, migration plan.
+- Roles still to write: module evaluation, issue triage, analysis of the reviews received on a pull request.
 - Guidelines whose official source is not yet registered: `manifest`, `models-fields`, `tests`, `security`, `security-audit`, `javascript` (marked `Source: to confirm`).
 - The skills have not yet been run on real tasks.
 - The license of this repository and its place in the OCA organization are to be confirmed with OCA.
@@ -121,3 +121,4 @@ Bugs are tracked on [GitHub Issues](https://github.com/OCA/oca-skills/issues). I
 ### Contributors
 
 - Cyril VINH-TUNG <cyril@invitu.com>
+- Maxime Chambreuil <maxime.chambreuil@graymatterlogic.com>
